@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+body { 
+  font-size: 62.5% ; 
+  position: relative;
+  color: #fff;
+  background-color: tomato;
+}
+
+* , *:before , *:after {
+  box-sizing: inherit;
+  margin: 0px;
+}
+
+.conteiner {
+  width: 80vw;
+  max-width: 600px;
+  border: solid 1px black;
+  margin: auto;
+  line-height: 2;
+  display: flex;
+  align-items: baseline;
+}
+
+.p1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: medium;
+  line-height: 2.5;
+  width: 40%;
+  border: dotted 1px blue;
+}
+.p2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+
+
+/* .p2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 40px;
+  width: 60%;
+} */
