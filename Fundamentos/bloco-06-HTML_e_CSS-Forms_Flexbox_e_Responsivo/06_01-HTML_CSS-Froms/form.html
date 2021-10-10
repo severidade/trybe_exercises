@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style src="style.css"></style>
+</head>
+<body>
+  <form action="get">
+    <fieldset>
+      <label for="nome">Nome</label>
+      <input id="nome" type="text" maxlength="40" required>
+      <label for="mail">Seu e-mail</label>
+      <input id="mail"type="e-mail" maxlength="50" required>
+      <label for="cpf">CPF</label>
+      <input id="cpf" type="number" maxlength="11" required>
+      <label for="endereco">Endereço</label>
+      <input id="endereco" type="text" maxlength="200">
+      <label for="cidade"></label>
+      <input id="cidade" type="text" maxlength="28" required>
+      
+      <label for="uf">Estados</label>
+      <select name="estados" id="uf" required>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>  
+      </select>
+      <div>
+        <label for="casa">Casa</label>
+        <input type="radio" id="casa" name="moradia" value="casa" checked>
+        <label for="ap">Casa</label>
+        <input type="radio" id="ap" name="moradia" value="casa">
+      </div>
+    </fieldset>
+    <fieldset>
+
+    </fieldset>
+  </form>
+  <script src="script.js "></script>
+</body>
+</html>
+
+<!-- https://app.betrybe.com/course/fundamentals/html-e-css-forms-flexbox-e-responsivo/html-css-forms/156eddd8-90cb-48c5-a01d-d2cd3c7b39cc/exercicios/ba90aaf8-3891-403a-a25f-4e2afa0e4da8/criando-um-formulario-de-curriculo/98a1832a-35c8-42c3-a672-083c7b7dc536?use_case=side_bar -->
