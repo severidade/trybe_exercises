@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${file}"
+            "program": "${workspaceFolder}/Fundamentos/bloco-08-Higher_Order_Functions_do_JavaScript_ES6/08_04-Reduce/Exercicios_finais/exercise5.js"
         }
     ]
 }
