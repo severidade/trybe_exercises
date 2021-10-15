@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/aula_vivo/reduce_array_objetos.js"
+            "program": "${file}"
         }
     ]
 }
