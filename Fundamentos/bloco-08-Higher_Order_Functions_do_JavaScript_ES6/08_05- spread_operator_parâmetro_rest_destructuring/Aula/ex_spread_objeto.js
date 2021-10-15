@@ -13,6 +13,7 @@ const pessoa = {
 const pessoaTrybe = {
     ...pessoa, 
     ...conhecimentos,
+    esporte: "corrida",
 }
 
 console.log(pessoaTrybe);
