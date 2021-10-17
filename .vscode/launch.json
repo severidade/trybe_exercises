@@ -1,0 +1,17 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/Fundamentos/bloco-08-Higher_Order_Functions_do_JavaScript_ES6/08_05- spread_operator_parâmetro_rest_destructuring/exercicios_finais/exercise1.js"
+        }
+    ]
+}
