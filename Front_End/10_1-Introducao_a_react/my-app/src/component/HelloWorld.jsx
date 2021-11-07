@@ -14,6 +14,7 @@ class HelloWorld extends Component {
     }
 
     const arrayComidas = ["🥧", "🍪", "🍰"]
+    
     return (
       <>
         {element}
