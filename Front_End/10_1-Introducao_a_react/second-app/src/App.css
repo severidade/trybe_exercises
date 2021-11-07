@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Oswald:wght@300;400;700&family=Russo+One&family=Titillium+Web:wght@400;700;900&display=swap');
+/* font-family: 'Joti One', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Titillium Web', sans-serif; */
+
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.conteiner_cards {
+  width: 80vw;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  gap: 20px
+}
+
+.conteiner_cards h4 {
+  font-family: 'Joti One', cursive;
+  font-weight: 300;
+
+}
+
+.card {
+  background: rgb(174, 174, 175);
+  width: 25%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .App {
   text-align: center;
 }
