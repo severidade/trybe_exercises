@@ -4,19 +4,23 @@ class App extends React.Component {
 
   constructor() {
     super()
-    this.handleClick = this.handleClick.bind(this);
+    this.handleClick = this.handleClick.bind(this)
     // para nossa funçao aceitar o this tem que escrever isso
-    // console.log('componente sendo construído')
+    this.state = {
+      numeroDeCliques: 0 
+    }
   }
 
   handleClick() {
-    // console.log(this);
-    console.log('Clicou no botão!');
+    // aqui acontece de forma assincrona
+    this.setState((estadoAnterior, _props) => ({
+      numeroDeCliques: estadoAnterior.numeroDeCliques +1
+    }))
   }
 
   render() {
     // console.log(this);
-    return (<button onClick={this.handleClick}>Botão</button>);
+    return (<button onClick={this.handleClick}>Botão{this.state.numeroDeCliques}</button>)
     // return<button>meu botao</button>
   }
 }
