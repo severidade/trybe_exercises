@@ -20,9 +20,9 @@ class TvShow extends React.Component {
       return (
         <article>
           <h2>{tvShowData.name}</h2>
-          <img src={data.image} alt={data.name} />
-          <p>Gênero: {data.genre}</p>
-          <p>Personagens: {data.characters.map((character) => {
+          <img src={tvShowData.image} alt={tvShowData.name} />
+          <p>Gênero: {tvShowData.genre}</p>
+          <p>Personagens: {tvShowData.characters.map((character) => {
             return <strong> {`${character} |`} </strong>
           })}</p>
         </article>
