@@ -14,7 +14,13 @@ class App extends Component {
         <h1>Lista de Séries</h1>
         <section>
           {/* <TvShow name={Catalog[0].name} genre={catalog[0].genre}/> */}
-          <TvShow tvShowData={Catalog[3]}/>
+          {/* <TvShow tvShowData={Catalog[3]}/> */}
+          {
+            Catalog.map((item) => {
+              return <TvShow key={item.id} tvShowData={item}/>
+            })
+          }
+
         </section>
       </div>
     );
