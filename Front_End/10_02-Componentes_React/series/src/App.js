@@ -1,27 +1,14 @@
 import React, { Component } from "react";
-import TvShow from "./Components/TvShow";
-
-import Catalog from "./Data/SeriesData";
-
+import TvShowList from "./Components/TvShowList";
 import "./App.css";
 
 
 class App extends Component {
   render() {
-    console.log(Catalog);
     return (
       <div>
         <h1>Lista de Séries</h1>
-        <section>
-          {/* <TvShow name={Catalog[0].name} genre={catalog[0].genre}/> */}
-          {/* <TvShow tvShowData={Catalog[3]}/> */}
-          {
-            Catalog.map((item) => {
-              return <TvShow key={item.id} tvShowData={item}/>
-            })
-          }
-
-        </section>
+        <TvShowList />
       </div>
     );
   }
