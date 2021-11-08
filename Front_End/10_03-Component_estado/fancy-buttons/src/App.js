@@ -1,17 +1,24 @@
-    // src/App.js
-    import React from 'react';
+import React from 'react';
 
-    class App extends React.Component {
+class App extends React.Component {
 
-      handleClick() {
-        console.log('Clicou no botão!');
-      }
+  constructor() {
+    super()
+    this.handleClick = this.handleClick.bind(this);
+    // para nossa funçao aceitar o this tem que escrever isso
+    // console.log('componente sendo construído')
+  }
 
-      render() {
-        // console.log(this);
-        return (<button onClick={ this.handleClick }>Botão</button>);
-        // return<button>meu botao</button>
-      }
-    }
+  handleClick() {
+    // console.log(this);
+    console.log('Clicou no botão!');
+  }
 
-    export default App;
+  render() {
+    // console.log(this);
+    return (<button onClick={this.handleClick}>Botão</button>);
+    // return<button>meu botao</button>
+  }
+}
+
+export default App;
