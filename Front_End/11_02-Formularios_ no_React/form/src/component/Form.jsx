@@ -1,6 +1,27 @@
 import React, { Component } from 'react';
 
 class Form extends Component {
+	constructor () {
+		super()
+
+		this.handleTextAreaChange = this.handleTextAreaChange.bind(this)
+
+		// estado inicial
+		this.state = {
+			estadoFavorito: '',
+			nome: '',
+			email: '',
+			idade: 0,
+			vaiComparecer: false,
+			PalavraChaveFavorita: ''
+		}
+	}
+
+	handleTextAreaChange(event) {
+		// console.log(event.target.value)
+		this.setState({estadoFavorito: event.target.value})
+	}
+
 	render() {
 		return (
 			<div>
@@ -8,7 +29,11 @@ class Form extends Component {
 				<form className="formulario">
 					<label>
 						Diga qual é o seu Estado vavorito! Do brasil ou do React, Você quem sabe!
-						<textarea name="estadoFavorito"></textarea>
+						<textarea 
+							name="estadoFavorito" 
+							value={this.state.estadoFavorito} // linha 11
+							onChange={this.handleTextAreaChange}
+						/>
 					</label>
 					<label>
 						Email
@@ -22,14 +47,13 @@ class Form extends Component {
 						Idade
 						<input name="idade" type="number" />
 					</label>
-
 					<label>
 						Vai comparecer à conferência?
 						<input type="checkbox"name="vaiComparecer" />
 					</label>
 					<label>
 						Escolha sua palavra chave favorita:
-						<select name="PalavraChaveFavorita">
+						<select name="palavraChaveFavorita">
 							<option value="estado">Estado</option>
 							<option value="evento">Evento</option>
 							<option value="props">Props</option>
