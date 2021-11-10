@@ -18,10 +18,10 @@
 }
 @keyframes rotacionar {
   0% {
-    -webkit-transform: rotateY(0deg) rotateX(0deg) ;
+    -webkit-transform: rotateY(45deg) rotateX(0deg) ;
   }
   100% {
-    -webkit-transform: rotateY(720deg) rotateX(1080deg);
+    -webkit-transform: rotateY(45deg) rotateX(1080deg);
   }
 }
 body {
