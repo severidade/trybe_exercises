@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Rozha+One&display=swap');
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+  --cubo-comprimento-aresta: 20vw;
+  --cubo-comprimento-aresta_negativo: -20vw;
+  --cubo-comprimento-meia_aresta: 10vw;
+  --cubo-comprimento-meia_aresta_negativo: -10vw;
+  --remove-superficie_positivo: 0.01em;
+  --remove-superficie_negativo: -0.01em;
+}
+@keyframes rotacionar {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg) ;
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(1080deg);
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: url("http://severidade.com.br/codpenio/cubo_3d/black_texture.png");
+}
+
+.conteiner-exercicio { 
+  width: 20.5em; 
+  height: 20.5em; 
+  position: relative;
+  /* border: solid 0.1em #390139; */
+}
+
+div[class^="conteiner-cubo"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.conteiner-cubo2 { animation: rotacionar 30s infinite linear; }
+
+div[class^="face"] {
+  font-family: 'Rozha One', serif;
+  color: #fff;
+  font-size: 6vw;
+  width: var(--cubo-comprimento-aresta);
+  height: var(--cubo-comprimento-aresta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: url("http://severidade.com.br/codpenio/cubo_3d/5.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*Cubo no meio da superfície */
+.conteiner-cubo2 .face_1 { transform: translateZ(var(--cubo-comprimento-meia_aresta_negativo)); }
+.conteiner-cubo2 .face_2 { transform: rotateX(90deg) translateZ(var(--cubo-comprimento-meia_aresta)); transform-origin: center center; }
+.conteiner-cubo2 .face_3 { transform: rotateY(90deg) translateZ(var(--cubo-comprimento-meia_aresta)); transform-origin: center center; }
+.conteiner-cubo2 .face_4 { transform: rotateY(-90deg) translateZ(var(--cubo-comprimento-meia_aresta)); transform-origin: center center; }
+.conteiner-cubo2 .face_5 { transform: rotateX(270deg) translateZ(var(--cubo-comprimento-meia_aresta)); transform-origin: center center; }
+.conteiner-cubo2 .face_6 { transform: translateZ(var(--cubo-comprimento-meia_aresta)); transform-origin: center center; }
