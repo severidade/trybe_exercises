@@ -14,8 +14,6 @@ const reducer = ( state = ESTADO_INICIAL, action) => {
 
 // 01 ==== Criando a Store ====
 const store = Redux.createStore(reducer);
-console.log(store);
-// console.log(store.getState());
 
 // Criar o escutador
 document.getElementById('next').addEventListener('click', () => {
@@ -24,3 +22,6 @@ document.getElementById('next').addEventListener('click', () => {
 document.getElementById('previous').addEventListener('click', () => {
   alert('clicouPrev')
 });
+
+// console.log(store);
+// console.log(store.getState());
