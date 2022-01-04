@@ -31,7 +31,8 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: url("http://severidade.com.br/codpenio/cubo_3d/black_texture.png");
+  background: url("./img/black_texture.png");
+  /* background-image: url('./img/5.gif'); */
 }
 
 .conteiner-exercicio { 
@@ -52,7 +53,7 @@ div[class^="conteiner-cubo"] {
 }
 
 
-.conteiner-cubo2 { animation: rotacionar 30s infinite linear; }
+.conteiner-cubo2 { animation: rotacionar 100s infinite linear; }
 
 div[class^="face"] {
   font-family: 'Rozha One', serif;
@@ -64,7 +65,7 @@ div[class^="face"] {
   align-items: center;
   justify-content: center;
   position: absolute;
-  background: url("http://severidade.com.br/codpenio/cubo_3d/5.gif");
+  background: url("./img/5.gif");
   background-size: cover;
   background-repeat: no-repeat;
 }

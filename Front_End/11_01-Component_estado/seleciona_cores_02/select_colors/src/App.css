@@ -1,0 +1,36 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main {
+  width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+li {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+}
+
+.color-display {
+  width: 16px;
+  height: 16px;
+  border: solid 1px;
+  background-color: blue;
+  border-radius: 2px;
+}
