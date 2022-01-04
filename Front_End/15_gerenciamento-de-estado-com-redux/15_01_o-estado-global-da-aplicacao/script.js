@@ -20,7 +20,7 @@ const reducer = ( state = ESTADO_INICIAL, action) => {
     default:
       return state;
   }
-  console.log(state);
+
 }
 
 
