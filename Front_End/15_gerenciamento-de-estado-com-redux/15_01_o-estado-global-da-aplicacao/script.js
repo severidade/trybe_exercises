@@ -1,3 +1,4 @@
+// Estado inicial
 const ESTADO_INICIAL = {
   colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
   index: 0,
@@ -9,11 +10,17 @@ const reducer = ( state = ESTADO_INICIAL, action) => {
     default:
       return state;
   }
-
 }
-
 
 // 01 ==== Criando a Store ====
 const store = Redux.createStore(reducer);
-// console.log(store);
+console.log(store);
 // console.log(store.getState());
+
+// Criar o escutador
+document.getElementById('next').addEventListener('click', () => {
+  alert('clicouNext');
+});
+document.getElementById('previous').addEventListener('click', () => {
+  alert('clicouPrev')
+});
