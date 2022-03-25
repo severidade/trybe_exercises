@@ -4,6 +4,11 @@ const ESTADO_INICIAL = {
   index: 0,
 };
 
+// 03 ========== ACTIONTYPES ==========
+const INCREMENTO = "INCREMENTO";
+const DECREMENTO = "DECREMENTO";
+
+
 // 02 ==== Criando o Reducer ====
 const reducer = ( state = ESTADO_INICIAL, action) => {
   switch (action.type){
