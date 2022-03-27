@@ -6,8 +6,8 @@ class Player extends Component {
       <div className="player">
         <fieldset>
           <legend>Player</legend>
-          <h1>Categoria</h1>
-          <h1>Filme</h1>
+          <h2>Categoria</h2>
+          <h3>Filme</h3>
         </fieldset>
       </div>
     );
