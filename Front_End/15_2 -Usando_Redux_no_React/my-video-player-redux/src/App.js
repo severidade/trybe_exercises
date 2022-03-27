@@ -1,6 +1,6 @@
 import Player from "./components/Player";
 import Sidebar from "./components/Sidebar";
-import categories from './data/data_filmes'
+import categories from './data/data_filmes';
 
 function App() {
   return (
