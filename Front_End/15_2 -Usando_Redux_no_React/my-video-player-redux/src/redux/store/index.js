@@ -5,6 +5,7 @@ import rootReducer from "../reducers";
 const store = createStore(
   rootReducer,
   composeWithDevTools()
+  //serve pra ver estado no navegador
 );
 
 export default store;

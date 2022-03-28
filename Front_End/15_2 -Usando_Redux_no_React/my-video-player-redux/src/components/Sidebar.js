@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 // import categories from '../data/data_filmes';
 
 class Sidebar extends Component {
   render() {
     const { categories } = this.props;
+
     return (
       <aside>
       <fieldset>
@@ -35,4 +38,8 @@ class Sidebar extends Component {
   }
 }
 
-export default Sidebar;
+const mapStateToProps = (store) => ({
+  categories: store.movieReducer.categories,
+});
+
+export default connect(mapStateToProps)(Sidebar);

@@ -9,3 +9,5 @@ export function movieAction(category, movie) {
     movie,
   };
 }
+
+// sou um objeto, tenho um tipo type e posso carregar algum dado
